@@ -4,30 +4,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MTW App Template</title>
-   <style>
-    .bat{float:left; height: 50px;padding: 5px;margin: 5px;background-color: gray; border-radius :5px; corner: pointer;}
-   </style>
+    <title>Web Technology - Lab 1</title>
+    <style>
+        #myDiv {
+            border: 1px solid silver;
+            width: 250px; /* Reduced width */
+            height: 400px; /* Reduced height */
+            background-color: lightblue;
+            font-size: 16px; /* Reduced font size */
+            text-align: center;
+            margin: 20px auto;
+        }
+
+        button {
+            width: 33.33%;
+            padding: 16px; /* Adjusted padding */
+            float: left;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            font-size: 1.3em; /* Adjusted font size */
+        }
+
+        .but1 {
+            width: 33.33%;
+            padding: 16px; /* Adjusted padding */
+            float: left;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            font-size: 1.3em; /* Adjusted font size */
+        }
+
+        .num-button {
+            background-color: silver;
+        }
+
+        .op-button {
+            background-color: lightgreen;
+        }
+
+        #myDiv input {
+            width: 100%;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 
-<body >
-
+<body>
     <!-- your app code goes here -->
-    <div style="width: 300px; margin: 20px auto;background-color: silver;">
-        <!--<div style="float:left; height: 50px;padding: 5px;margin: 5px;background-color: gray; border-radius: ;-->
-        <div class="bat">1</div>
-        <div class="bat">2</div>
-        <div class="bat">3</div>
-        <div class="bat">4</div>
-        <div class="bat">5</div>
-        <div class="bat">6</div>
-        <div class="bat">7</div>
-        <div class="bat">8</div>
-        <div class="bat">9</div>
-        <div class="bat">0</div>
-        <div class="bat">+</div>
-        <div class="bat">-</div>
-        <div style="clear: both;"></div>
+    </br>
+    </br>
+    <div id="myDiv">
+        </br></br></br>
+        
+        <div>
+            <div class="but1 num-button"><button>1</button></div>
+            <div class="but1 num-button"><button>2</button></div>
+            <div class="but1 num-button"><button>3</button></div>
+            <div style="clear: both"></div>
+        </div>
+        <div>
+            <div class="but1 num-button"><button>4</button></div>
+            <div class="but1 num-button"><button>5</button></div>
+            <div class="but1 num-button"><button>6</button></div>
+            <div style="clear: both"></div>
+        </div>
+        <div>
+            <div class="but1 num-button"><button>7</button></div>
+            <div class="but1 num-button"><button>8</button></div>
+            <div class="but1 num-button"><button>9</button></div>
+            <div style="clear: both"></div>
+        </div>
+        <div>
+            <div class="but1 op-button"><button>+</button></div>
+            <div class="but1 num-button"><button>0</button></div>
+            <div class="but1 op-button"><button>-</button></div>
+            <div style="clear: both;"></div>
+        </div>
+        <div>
+            <div class="but1 op-button"><button>*</button></div>
+            <div class="but1 op-button"><button>/</button></div>
+            <div class="but1 op-button"><button>%</button></div>
+            <div style="clear: both;"></div>
+        </div>
     </div>
     <!-- special scripts for integration in MTW gallery - must be placed at the bottom of the HTML after your code -->
     <script>
@@ -41,7 +106,7 @@
         const sendPrivateApiRequest = async () => {
             // your code here:
             // sendRequestToParent({ cat: 'getAssets' })
-        }        
+        }
 
         const acceptPrivateApiResponse = async (data) => {
             // process received data here:
@@ -53,7 +118,6 @@
             // your code here:
             //sendRequestToParent({ method: 'getAssets' })
         })
-
     </script>
     <script src="https://morethanwallet.com/appstore/index.js"></script>
 </body>
