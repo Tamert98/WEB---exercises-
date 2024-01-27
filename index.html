@@ -5,120 +5,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Technology - Lab 1</title>
-    <style>
-        #myDiv {
-            border: 1px solid silver;
-            width: 250px; /* Reduced width */
-            height: 400px; /* Reduced height */
-            background-color: lightblue;
-            font-size: 16px; /* Reduced font size */
-            text-align: center;
-            margin: 20px auto;
-        }
-
-        button {
-            width: 33.33%;
-            padding: 16px; /* Adjusted padding */
-            float: left;
-            box-sizing: border-box;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-weight: bold;
-            font-size: 1.3em; /* Adjusted font size */
-        }
-
-        .but1 {
-            width: 33.33%;
-            padding: 16px; /* Adjusted padding */
-            float: left;
-            box-sizing: border-box;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-weight: bold;
-            font-size: 1.3em; /* Adjusted font size */
-        }
-
-        .num-button {
-            background-color: silver;
-        }
-
-        .op-button {
-            background-color: lightgreen;
-        }
-
-        #myDiv input {
-            width: 100%;
-            box-sizing: border-box;
-            margin-bottom: 10px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <!-- your app code goes here -->
-    </br>
-    </br>
-    <div id="myDiv">
-        </br></br></br>
+
+    <div id="Calculator">
+            <div class="result"></div>
+            <div style="clear: both"></div>
+            <div><button class="first">MC</button></div>
+            <div><button class="first">MR</button></div>
+            <div><button class="first">M+</button></div>
+            <div><button class="first">M-</button></div>
+            <div><button class="first">MS</button></div>
+            <div ><button class="first" style="background-color: rgb(255, 149, 0);">M'</button></div>
+            <div style="clear: both"></div>
+
+            <div><button>2nd</button></div>
+            <div><button id="piBtn">&Pi;</button></div>
+            <div><button id="eBtn">e</button></div>
+            <div><button id="cBtn">C</button></div>
+            <div><button style="background-color: rgb(255, 149, 0);">Del</button></div>
+            <div style="clear: both"></div>
+
+            <div><button id-="xPow2Btn">x^2</button></div>
+            <div><button id="oneDivXBtn" >1/x</button></div>
+            <div><button id="AbsXBtn">|x|</button></div>
+            <div><button>exp</button></div>
+            <div><button style="background-color: rgb(255, 149, 0);">mod</button></div>
+            <div style="clear: both"></div>
+
+            
+            <div><button id="rootBtn">&#8730;</button></div>
+            <div><button id="leftArrowBtn">(</button></div>
+            <div><button id="rightArrowBtn">)</button></div>
+            <div><button id="n3atseretBtn">n!</button></div>
+            <div><button id ="DivideBtn" style="background-color: rgb(255, 149, 0);">&#xF7;</button></div>
+            <div style="clear: both"></div>
+
+            <div><button id="xPowYBtn">X^y</button></div>
+            <div><button id="7Btn">7</button></div>
+            <div><button id ="8Btn">8</button></div>
+            <div><button id ="9Btn"></button>9</button></div>
+            <div><button id ="multiplyBtn" style="background-color: rgb(255, 149, 0);">&#215;</button></div>
+            <div style="clear: both"></div>
+
+            <div><button id="tenPowXBtn">10^x</button></div>
+            <div><button id ="4Btn">4</button></div>
+            <div><button id ="5Btn">5</button></div>
+            <div><button id ="6Btn">6</button></div>
+            <div><button id ="MinusBtn" style="background-color: rgb(255, 149, 0);">-</button></div>
+            <div style="clear: both"></div>
+
+            <div><button>log</button></div>
+            <div><button id ="1Btn">1</button></div>
+            <div><button id ="2Btn">2</button></div>
+            <div><button id ="3Btn">3</button></div>
+            <div><button id ="PlusBtn" style="background-color: rgb(255, 149, 0);">+</button></div>
+            <div style="clear: both"></div>
+
+            <div><button>ln</button></div>
+            <div><button>+/-</button></div>
+            <div><button>0</button></div>
+            <div><button>.</button></div>
+            <div><button style="background-color: rgb(255, 149, 0);">=</button></div>
+            <div style="clear: both"></div>
+
+
+
+            
         
-        <div>
-            <div class="but1 num-button"><button>1</button></div>
-            <div class="but1 num-button"><button>2</button></div>
-            <div class="but1 num-button"><button>3</button></div>
-            <div style="clear: both"></div>
-        </div>
-        <div>
-            <div class="but1 num-button"><button>4</button></div>
-            <div class="but1 num-button"><button>5</button></div>
-            <div class="but1 num-button"><button>6</button></div>
-            <div style="clear: both"></div>
-        </div>
-        <div>
-            <div class="but1 num-button"><button>7</button></div>
-            <div class="but1 num-button"><button>8</button></div>
-            <div class="but1 num-button"><button>9</button></div>
-            <div style="clear: both"></div>
-        </div>
-        <div>
-            <div class="but1 op-button"><button>+</button></div>
-            <div class="but1 num-button"><button>0</button></div>
-            <div class="but1 op-button"><button>-</button></div>
-            <div style="clear: both;"></div>
-        </div>
-        <div>
-            <div class="but1 op-button"><button>*</button></div>
-            <div class="but1 op-button"><button>/</button></div>
-            <div class="but1 op-button"><button>%</button></div>
-            <div style="clear: both;"></div>
-        </div>
     </div>
     <!-- special scripts for integration in MTW gallery - must be placed at the bottom of the HTML after your code -->
-    <script>
-        // custom config for the MTW app 
-        const mtwAppConfig = {
-            border: true // app border in the MTW page                    
-        }
-
-        ///////////////////////////////////////////////////////
-        // implement this functions in order to use private API        
-        const sendPrivateApiRequest = async () => {
-            // your code here:
-            // sendRequestToParent({ cat: 'getAssets' })
-        }
-
-        const acceptPrivateApiResponse = async (data) => {
-            // process received data here:
-            // console.log(data)
-        }
-
-        // use this in order to send on document load
-        document.addEventListener('DOMContentLoaded', () => {
-            // your code here:
-            //sendRequestToParent({ method: 'getAssets' })
-        })
-    </script>
+    <script src="pageScript.js"> </script>
     <script src="https://morethanwallet.com/appstore/index.js"></script>
 </body>
 
