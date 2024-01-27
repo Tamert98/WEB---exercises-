@@ -40,6 +40,11 @@
             margin: 2px auto;
         }
         .result {
+            color:black ;
+            font-weight: bold;
+            display: flex;
+            
+            font-size: 24px;
             width: 380px;
             height: 50px ;
             padding:2px;
@@ -48,4 +53,5 @@
             box-sizing: border-box;
             background-color: white;;
             align-items: center;
+            text-align: left;
         }
